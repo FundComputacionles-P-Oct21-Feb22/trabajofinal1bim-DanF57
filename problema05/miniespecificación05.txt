@@ -1,4 +1,5 @@
-//Algoritmos
+//Algoritmo
+
 1 Inicio
 
 2 Se pide que ingrese la coordenada X

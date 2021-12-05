@@ -66,3 +66,4 @@
 24 		<< "El total a pagar es: " + precioFinal
 25 Fin Si
 26 Fin
+
