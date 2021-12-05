@@ -15,14 +15,13 @@
 5 suma,		x(5)[{+,-}]<--"+"
 6 cadena,	x(n)[{0-9}{/}]
 
-7 Mientras (denominador <= limite)
+7 Mientras (denominador <= 100)
 
-8 	cadena = suma + numerador + denominador + " "
+8 	cadena = suma + numerador + "/" + denominador + " "
 9 	denominador = denominador + 1
-10 	<< cadena
 
-11 Fin_Mientras
-
+10 Fin_Mientras
+11 << cadena
 12 Fin
 
 
