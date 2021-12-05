@@ -29,28 +29,68 @@
 23 << "Por favor ingrese datos válidos"
 24 De lo contrario
 
- Si horasTrabajadas <= 40
- subtotal = horasTrabajadas * cuotaHora
- << "Nombre de empleado: " + nombre
- << "Tipo de empleado: " + tipoEmpleado
- << ""Número de horas trabajadas: " + horasTrabajadas
- << "Cuota que se le paga por hora: " + cuotaHora
- << "Sueldo por pagar: " + subtotal
- De lo contrario
+25 Si horasTrabajadas <= 40
+26 subtotal = horasTrabajadas * cuotaHora
+27 << "Nombre de empleado: " + nombre
+28 << "Tipo de empleado: " + tipoEmpleado
+29 << ""Número de horas trabajadas: " + horasTrabajadas
+30 << "Cuota que se le paga por hora: " + cuotaHora
+31 << "Sueldo por pagar: " + subtotal
+32 De lo contrario
 
- Si ((tipoEmpleado == 1 OR tipoEmpleado == 2 OR tipoEmpleado == 3 OR tipoEmpleado == 4)
-    AND horasTrabajadas < 40) entonces
- subtotal = horasTrabajadas * cuota1;
- << "Nombre de empleado: " + nombre
- << "Tipo de empleado: " + tipoEmpleado
- << ""Número de horas trabajadas: " + horasTrabajadas
- << "Cuota que se le paga por hora: " + cuotaHora
- << "Sueldo por pagar: " + subtotal
- De lo contrario
+33	Si tipoEmpleado == 1 AND horasTrabajadas > 40 entonces
+34	  subtotal = 40*cuotaHora
+35	  horasExtra = horasTrabajadas - 40
+36	  valorHorasExtra = (cuotaHora * cuota1) * horasExtra;
+37        totalPagar = valorHorasExtra + subtotal;
 
-	Si tipoEmpleado == 1 AND horasTrabajadas > 40 entonces
-	  subtotal = 40*cuotaHora
-	  horasExtra = horasTrabajadas - 40
-	De lo contrario
+38	  << "Nombre de empleado: " 		+ nombre
+39 	  << "Tipo de empleado: " 		+ tipoEmpleado
+40 	  << ""Número de horas trabajadas: " 	+ horasTrabajadas
+41 	  << "Cuota que se le paga por hora: "  + cuotaHora
+42	  << "Sueldo por pagar: " 		+ totalPagar
+43	De lo contrario
 
+45	Si tipoEmpleado == 2 AND horasTrabajadas > 40 entonces
+46	  subtotal = 40*cuotaHora
+47	  horasExtra = horasTrabajadas - 40
+48	  valorHorasExtra = (cuotaHora * cuota1) * horasExtra;
+49          totalPagar = valorHorasExtra + subtotal;
+
+50	  << "Nombre de empleado: " 		+ nombre
+51 	  << "Tipo de empleado: " 		+ tipoEmpleado
+52 	  << ""Número de horas trabajadas: " 	+ horasTrabajadas
+53 	  << "Cuota que se le paga por hora: "  + cuotaHora
+54	  << "Sueldo por pagar: " 		+ totalPagar
+55	De lo contrario
+
+56	Si tipoEmpleado == 3 AND horasTrabajadas > 40 entonces
+57	  subtotal = 40*cuotaHora
+58	  horasExtra = horasTrabajadas - 40
+59	  valorHorasExtra = (cuotaHora * cuota3) * horasExtra;
+60        totalPagar = valorHorasExtra + subtotal;
+
+61	  << "Nombre de empleado: " 		+ nombre
+62 	  << "Tipo de empleado: " 		+ tipoEmpleado
+63 	  << ""Número de horas trabajadas: " 	+ horasTrabajadas
+64 	  << "Cuota que se le paga por hora: "  + cuotaHora
+65	  << "Sueldo por pagar: " 		+ totalPagar
+66	De lo contrario
+
+	
+67	Si tipoEmpleado == 4 AND horasTrabajadas > 40 entonces
+68	  subtotal = 40*cuotaHora
+69	  horasExtra = horasTrabajadas - 40
+70	  valorHorasExtra = (cuotaHora * cuota4) * horasExtra;
+71        totalPagar = valorHorasExtra + subtotal;
+
+72	  << "Nombre de empleado: " 		+ nombre
+73 	  << "Tipo de empleado: " 		+ tipoEmpleado
+74 	  << ""Número de horas trabajadas: " 	+ horasTrabajadas
+75 	  << "Cuota que se le paga por hora: "  + cuotaHora
+76	  << "Sueldo por pagar: " 		+ totalPagar
+77	De lo contrario
+
+78 Fin Si
+79 Fin
  	  
